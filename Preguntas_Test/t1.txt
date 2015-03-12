@@ -1,0 +1,6 @@
+Una granja web puede albergar... :
+a) Varios sitios web de una sola empresa.
+b) Un único sitio web de una sola empresa.
+c) Uno o varios sitios web correspondientes a una o varias empresas.
+d) a y b son ciertas.
+respuesta correcta: C
