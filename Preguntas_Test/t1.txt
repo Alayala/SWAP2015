@@ -1,6 +1,24 @@
-Una granja web puede albergar... :
+1) Una granja web puede albergar... :
+
 a) Varios sitios web de una sola empresa.
+
 b) Un único sitio web de una sola empresa.
+
 c) Uno o varios sitios web correspondientes a una o varias empresas.
+
 d) a y b son ciertas.
+
 respuesta correcta: C
+
+
+2) Si lo recursos se encuentran sobre-utilizados (uso superior a un 90%) Deberíamos...
+
+a) Incrementar el ancho de banda.
+
+b) Configurar varias máquinas para repartir los servicios.
+
+c) Sustituir el hardware por otro con mayores prestaciones (CPU, discos, memoria...)
+
+d) Actualizar el software de la máquina.
+
+respuesta correcta: B

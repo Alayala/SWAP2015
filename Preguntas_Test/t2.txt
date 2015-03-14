@@ -1,0 +1,23 @@
+1) ¿Que factores influyen en la escalabilidad de un sistema?
+
+a) Adquirir productos hardware con elementos duplicados.
+
+b) Sustituir elementos hardware por otros con mayores prestaciones.
+
+c) Desarrollar aplicaciones redundantes.
+
+d) Todas son ciertas.
+
+respuesta correcta: B
+
+2) ¿Para qué sirve un balanceador de carga?
+
+a) Para comprobar que peticiones son más importantes y atenderlas primero.
+
+b) Para comprobar el porcentaje de uso de los elementos hardware.
+
+c) Nos informa de los momentos en los que se ha registrado más actividad en el servidor.
+
+d) Para repartir las peticiones entre los servidores disponibles.
+
+respuesta correcta: D
