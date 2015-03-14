@@ -10,6 +10,7 @@ d) Todas son ciertas.
 
 respuesta correcta: B
 
+
 2) ¿Para qué sirve un balanceador de carga?
 
 a) Para comprobar que peticiones son más importantes y atenderlas primero.
