@@ -1,6 +1,6 @@
-##Práctica 1
+#Práctica 1
 
-#Servidor SWEB0
+##Servidor SWEB0
 
 	> apache2 -v 
 
@@ -11,7 +11,7 @@
 ![captura_SWEB0_2](http://i.imgur.com/pGOTcUb.png)
 
 
-#Servidor SWEB1
+##Servidor SWEB1
 
 	> apache2 -v 
 
