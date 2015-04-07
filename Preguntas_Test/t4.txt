@@ -1,0 +1,25 @@
+1) ¿Cuáles son los incovenientes de usar el algoritmo de balanceo basado
+en el menor número de conexiones?
+
+a) Sólo se puede implementar en redes que no superen el máximo de 100 conexiones diarias.
+
+b) No es adecuado cuando existen grandes diferencias entre las máquinas.
+
+c) Reparte las peticiones según la utilización de cada máquina.
+
+d) B y C son ciertas.
+
+respuesta correcta: D
+
+
+2) ¿Ventajas que ofrece el GSLB?
+
+a) Todas son ciertas.
+
+b) Mejora el tiempo de respuesta.
+
+c) Evita la caida total al estar distribuido en varios centros de datos.
+
+d) Mejora la disponibilidad.
+
+respuesta correcta: A
