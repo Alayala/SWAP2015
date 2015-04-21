@@ -1,6 +1,6 @@
 #Práctica 3
 
-**Instalación y configuración de Nginx en la máquina Balanceador
+###Instalación y configuración de Nginx en la máquina Balanceador
 
 Realizamos la instalación siguiendo las instrucciones descritas en el guión de prácticas. Una vez instalado nginx, 
 editaremos el fichero de configuración.
@@ -20,11 +20,11 @@ una misma IP.
 
 ![captura1_3](http://i.imgur.com/BVweKIU.png)
 
-**Instalación y configuración de Haproxy en la máquina Balanceador
+###Instalación y configuración de Haproxy en la máquina Balanceador
 
-Lo primero que haremos será parar el servicio de Nginx para que no interfieracon Haproxy.
-Instalaremos Haproxy siguiendo las instrucciones que se dan en el guión de prácticas. Como hicimos anteriormente,
-una vez instalado, editaremos el fichero de configuración.
+Lo primero que haremos será parar el servicio de Nginx para que no interfiera con Haproxy.
+Instalaremos Haproxy siguiendo las instrucciones que se dan en el guión de prácticas. 
+Como hicimos anteriormente, una vez instalado, editaremos el fichero de configuración.
 
 ![captura2_1](http://i.imgur.com/AZyxthD.png)
 
