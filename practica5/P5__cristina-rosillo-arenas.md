@@ -1,6 +1,6 @@
 #Práctica 5
 
-**Creación de una pequeña base de datos e inserción de datos
+- **Creación de una pequeña base de datos e inserción de datos**
 
 El primer paso que daremos será crear una base de datos con una tabla, a la que añadiremos algunos
 valores. Nos vamos a nuestro servidor principal (Máquina 0) y desde consola ejecutaremos los siguientes
@@ -22,20 +22,18 @@ De forma que al final tendremos una tabla de éste estilo.
 
 ![captura1_0](http://i.imgur.com/SvUarvD.png)
 
-**Copia de seguridad de la Base de Datos con mysqldump
+- **Copia de seguridad de la Base de Datos con mysqldump**
 
 Ahora realizaremos una copia de seguridad de nuestra base de datos, desde la misma máquina (Máquina 0)
 ejecutamos el comando mysqldump.
 
-Pero antes tenemos que tener en cuenta que al momento de realizar la copia se pueden estar realizando inserciones,
-modificaciones etc. Por lo que deberiamos impedir que se realizasen cambios en ella antes de hacer la copia.
+Pero antes debemos tener en cuenta que al momento de realizar la copia se pueden estar realizando inserciones,
+modificaciones, etc. Por lo que deberíamos impedir que se realizasen cambios en ella antes de hacer la copia.
 Para ello antes de ejecutar la instrucción anterior, escribiremos:
 
 	mysql> FLUSH TABLES WITH READ LOCK;
 
 Y ya podemos realizar la copia.
-
-	> mysqldump contactos -u root -p > /root/contactos.sql
 
 ![captura2_1](http://i.imgur.com/b5pWw81.png)
 
@@ -46,34 +44,35 @@ Una vez hecha debemos volver a permitir los cambios.
 De forma que se nos creará en el directorio /root/ un fichero .sql que contendrá toda la información de
 nuestra base de datos y que nos servirá para hacer restauraciones.
 
-**Restaurar copia de seguridad en la segunda máquina
+- **Restaurar copia de seguridad en la segunda máquina**
 
  Teniendo ya nuestro fichero .sql lo copiaremos a la segunda máquina. Nos vamos al segundo servidor (Máquina 1) y ejecutamos:
 
 ![captura2_2](http://i.imgur.com/mwXnGeP.png)
 
 Comprobamos que efectivamente el fichero se encuentra en /root/ y restauramos la copia como muestra la siguiente
-imagen. Es importante para poder realizar la restauración de forma correcta tener creada previamente la base de datos.
+imagen. Es importante para poder realizar la restauración de forma correcta, tener creada previamente la base de datos.
 
 ![captura2_3](http://i.imgur.com/PnwCT0k.png)
 
-Entramos en mysql y vemos que efectivamente la tabla y los valores que definimos en la máquina 0 se encuentran ya ennuestra 
+Entramos en mysql y vemos que efectivamente la tabla y los valores que definimos en la máquina 0 se encuentran ya en nuestra 
 máquina 1.
 
 ![captura2_4](http://i.imgur.com/usZ0pWv.png)
 
 
-**Configuración maestro-esclavo de los servidores MySQL
+- **Configuración maestro-esclavo de los servidores MySQL**
 
 Antes de comenzar la configuración debemos comprobar que los servicios MySQL de ambos servidores sena versiones
 similares, para prevenir posibles conflictos. Podemos hacerlo ejecutando:
 
-	>mysql --version
+	> mysql --version
 
-Una vez comprobado que son la mism versión, empezaremos a editar el fichero de configuración de mysql "/etc/mysql/my.cnf"
+Una vez comprobado que son la misma versión, empezaremos a editar el fichero de configuración de mysql "/etc/mysql/my.cnf"
 de nuestra máquina 0 que en éste caso será el maestro.
 
 Comentaremos el parámetro: #bind-address 127.0.0.1
+
 Modificamos el valor del parámetro: server-id = 1
 
 Y reiniciamos el servicio.
@@ -94,12 +93,12 @@ instrucciones.
 ![captura3_3](http://i.imgur.com/7XOzzej.png)
 
 Seguidamente vamos a nuestro servidor esclavo (Máquina 1) para configurar en ella los datos del maestro. Accedemos a 
-la consola mysql. Antes de ejecutar la isntrucción para configurar la información del maestro debemos parar al esclavo, así que
-ejecutaremos las siguientes instrucciones en orden:
+la consola mysql y paramos al esclavo antes de poder configurar la información del maestro¹.
+Ejecutaremos las siguientes instrucciones en orden:
 	
 	mysql> STOP SLAVE;
 	
-![captura3_4](http://i.imgur.com/hm29a7S.png)[^1]
+![captura3_4](http://i.imgur.com/hm29a7S.png) 
 
 	mysql> START SLAVE;
 
@@ -112,14 +111,14 @@ Y para comprobar que todo funciona de forma correcta y que no existe ningún pro
 
 	mysql> SHOW SLAVE STATUS\G;
 
-Si el valor de la variable Seconds-Behind_Master es distinto de NULL significaría que todo está correcto.
+Si el valor de la variable Seconds_Behind_Master es distinto de NULL significaría que todo está correcto.
 
 ![captura3_5](http://i.imgur.com/m5U6fno.png)
 
-Ahora si para terminar insertaremos un nuevo registro en la tabla datos de nuestro servidor principal y comprobaremos 
+Ahora sí, para terminar insertaremos un nuevo registro en la tabla datos de nuestro servidor principal y comprobaremos 
 como efectivamente esa inserción también nos aparece en la tabla datos de nuestro esclavo.
 
 ![captura3_6](http://i.imgur.com/jPdXcAV.png)
 
 
-[^1]: En ésta captura existe una pequeña errata en el parámetro MASTER_LOG_FILE, el valor correcto es: MASTER_LOG_FILE='bin.000001'.
+¹: En ésta captura existe una pequeña errata en el parámetro MASTER_LOG_FILE, el valor correcto es: MASTER_LOG_FILE='bin.000001'.
