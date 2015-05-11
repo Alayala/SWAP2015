@@ -1,3 +1,6 @@
+Cristina Rosillo Arenas
+Jose Antonio Plata Muñoz
+
 #Práctica 5
 
 - **Creación de una pequeña base de datos e inserción de datos**
@@ -122,3 +125,4 @@ como efectivamente esa inserción también nos aparece en la tabla datos de nues
 
 
 ¹: En ésta captura existe una pequeña errata en el parámetro MASTER_LOG_FILE, el valor correcto es: MASTER_LOG_FILE='bin.000001'.
+
