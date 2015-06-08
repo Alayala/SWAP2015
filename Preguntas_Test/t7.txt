@@ -1,0 +1,24 @@
+1) RAID puede...
+
+a) Protege los datos.
+
+b) Mejora el rendimiento de todas las aplicaciones..
+
+c) Permite acceder a los datos aunque falle un dico.
+
+d) Todas son correctas.
+
+respuesta correcta: C
+
+
+2) ¿Qué tipo de RAID crea una copia exacta de un conjunto de datos en dos o más discos?
+
+a) RAID 1.
+
+b) RAID 4.
+
+c) RAID 0.
+
+d) RAID 5.
+
+respuesta correcta: A
