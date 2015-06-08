@@ -1,15 +1,14 @@
 Jose Antonio Plata Muñoz
+
 Cristina Rosillo Arenas
 
 #Práctica 4. Comprobar el rendimiento de servidores web
 
 
 
-**Apache Benchmark**
+- **Apache Benchmark**
 
 Hemos realizado 5 ejecuciones "ab -n 1000 -c 150" ya que 10 tardaba demasiado http://192.168.1.101/index.php"
-
-
 
 ![](http://i.imgur.com/GW8Nej1.png)
 
@@ -20,7 +19,7 @@ Una gráfica del Time per request en ms con los 3 servidores:
 
 Bastante claro que el mejor resultado nos lo da haproxy, que envía mas peticiones y contesta mas por segundo.
 
-**OpenLoad**
+- **OpenLoad**
 
 ![](http://i.imgur.com/p54bfCM.png)
 
@@ -28,7 +27,6 @@ Bastante claro que el mejor resultado nos lo da haproxy, que envía mas peticion
 Gráfica del response time:
 
 ![](http://i.imgur.com/Gq8g2XN.png)
-
 
 
 Total de respuestas:
@@ -44,8 +42,7 @@ Medias:
 ![](http://i.imgur.com/f9IOi2T.png)
 
 
-**Siege**
-
+- **Siege**
 
 ![](http://i.imgur.com/3jdlVnZ.png)
 
