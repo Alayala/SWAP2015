@@ -1,0 +1,24 @@
+1) ¿Qué nos ayudará a buscar cuellos de botella?
+
+a) Realizar benchmarks y comprobar los resultados.
+
+b) Analizar los logs del servidor.
+
+c) A y B son ciertas.
+
+d) Ninguna es correcta.
+
+respuesta correcta: C
+
+
+2) Elementos hardware principales de una granja web.
+
+a) Servidores, Routers y Balanceadores.
+
+b) Almacenamiento, Balanceadores y Routers.
+
+c) Conexiones de red, Routers y Servidores.
+
+d) Servidores, Almacenamiento y Conexiones de red.
+
+respuesta correcta: D
