@@ -15,7 +15,7 @@ Una vez añadidos a nuestra máquina, la arrancamos y procederemos a configurar 
 
 Instalaremos en la máquina el software necesario para hacerlo, ejecutando la siguiente instrucción.
 
-![captura2_0]http://i.imgur.com/kayhwxg.png()
+![captura2_0](http://i.imgur.com/kayhwxg.png)
 
 A continuación buscaremos la identificación que ha asignado linux a cada disco.
 
