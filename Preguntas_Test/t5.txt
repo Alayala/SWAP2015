@@ -1,0 +1,24 @@
+1) ¿Porqué está limitado el número de conexiones concurrentes?
+
+a) Por el ancho de banda de la conexión.
+
+b) Por el número que nosotros le configuremos.
+
+c) No está limitado puede variar desde varios miles a millones.
+
+d) Por la memoria o el procesador del dispositivo.
+
+respuesta correcta: D
+
+
+2) ¿Cuales son los patrones de tráfico más comunes?
+
+a) HTTP, FTP/streaming, Tienda Web.
+
+b) HTTP, FTP, SSH.
+
+c) FTP, Streaming, HTTP.
+
+d) Tienda Web, FTP, Stremaing.
+
+respuesta correcta: A

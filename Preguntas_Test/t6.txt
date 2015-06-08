@@ -1,0 +1,24 @@
+1) ¿Cuales son los niveles que existen en políticas de seguridad?
+
+a) Seguridad a nivel físico, seguridad a nivel de red y seguridad a nivel de replicación.
+
+b) Seguridad a nivel físico, de red, administrativo y de aplicaciones.
+
+c) Seguridad a nivel de red, administrativo y de cuentas de servicios.
+
+d) Ninguna es cierta.
+
+respuesta correcta: B
+
+
+2) El objetivo de un cortafuegos es...
+
+a) Facilitar al administrador el permitir o denegar el acceso a los puertos.
+
+b) Protege al sistema de accesos indebidos.
+
+c) Administrar los puertos por los que los usuarios se va a conectar.
+
+d) Proteger al sistema de virus.
+
+respuesta correcta: B
